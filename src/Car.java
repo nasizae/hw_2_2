@@ -1,11 +1,11 @@
 public abstract class Car implements Printable{
     private String model;
-    private int age;
+    private int year;
     private String color;
 
-    public Car(String model, int age,String color) {
+    public Car(String model, int year,String color) {
         this.model = model;
-        this.age = age;
+        this.year = year;
         this.color=color;
     }
 
@@ -17,7 +17,7 @@ public abstract class Car implements Printable{
         return model;
     }
 
-    public int getAge() {
-        return age;
+    public int getYear() {
+        return year;
     }
 }

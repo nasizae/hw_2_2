@@ -1,8 +1,8 @@
 public class MercedesBenz extends Car implements Printable{
     private int price;
 
-    public MercedesBenz(String model, int age,String color, int price) {
-        super(model, age,color);
+    public MercedesBenz(String model, int year,String color, int price) {
+        super(model, year,color);
         this.price = price;
     }
 
@@ -13,7 +13,7 @@ public class MercedesBenz extends Car implements Printable{
     @Override
     public void print() {
         System.out.println("model:"+getModel()+
-                "\nage:"+getAge()+
+                "\nyear:"+getYear()+
                 "\ncolor:"+getColor()+
                 "\nprice:"+this.price+"$");
     }

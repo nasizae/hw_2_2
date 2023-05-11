@@ -1,8 +1,8 @@
 public class BMW extends Car implements Printable{
 private String typeCar;
 
-    public BMW(String model, int age,String color, String typeCar) {
-        super(model, age,color);
+    public BMW(String model, int year,String color, String typeCar) {
+        super(model, year,color);
         this.typeCar = typeCar;
     }
 
@@ -13,7 +13,7 @@ private String typeCar;
     @Override
     public void print() {
         System.out.println("model:"+getModel()+
-                "\nage:"+getAge()+
+                "\nyear:"+getYear()+
                 "\ncolor:"+getColor()+
                 "\ntype:"+this.typeCar);
     }
